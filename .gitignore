@@ -2,6 +2,7 @@
 /auth.json
 **/auth.json
 !**/auth.example.json
+/mcp-auth.json
 
 # Local state & runtime - don't sync
 /.pi/
@@ -17,6 +18,7 @@
 /session-manager-config.toml
 pi-crash.log
 pi-debug.log
+mcp.log*
 
 # Dependencies & caches (install locally)
 **/node_modules/

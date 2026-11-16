@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "excalidraw-local": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-excalidraw-server"
+      ],
+      "description": "Local Excalidraw live canvas and diagramming server"
+    }
+  }
+}
