@@ -1,0 +1,11 @@
+{
+  "lastChangelogVersion": "1.5.2",
+  "defaultProvider": "google",
+  "defaultModel": "gemini-4-argon",
+  "observational-memory": {
+    "models": {
+      "observer": { "provider": "google", "id": "gemini-4-argon", "thinking": "low" },
+      "consolidator": { "provider": "google", "id": "gemini-4-argon", "thinking": "medium" }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# Sensitive - don't sync
+/auth.json
+**/auth.json
+!**/auth.example.json
+
+# Local state & runtime - don't sync
+/.pi/
+/sessions/
+/bin/
+/install/
+/git/
+/trust.json
+/models-store.json
+/mcp-cache.json
+/mcp-npx-cache.json
+/run-history.jsonl
+/session-manager-config.toml
+pi-crash.log
+pi-debug.log
+
+# Dependencies & caches (install locally)
+**/node_modules/
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+tmp/
