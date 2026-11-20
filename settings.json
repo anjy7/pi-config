@@ -4,8 +4,8 @@
   "defaultModel": "gemini-4-argon",
   "observational-memory": {
     "models": {
-      "observer": { "provider": "google", "id": "gemini-4-argon", "thinking": "low" },
-      "consolidator": { "provider": "google", "id": "gemini-4-argon", "thinking": "medium" }
+      "observer": { "provider": "openai", "id": "gpt-6-luna", "thinking": "low" },
+      "consolidator": { "provider": "openai", "id": "gpt-6-luna", "thinking": "medium" }
     }
   }
 }
