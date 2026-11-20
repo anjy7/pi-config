@@ -12,6 +12,8 @@ cd ~/.pi/agent && ./setup.sh
 
 Add provider credentials to `~/.pi/agent/auth.json` and restart Pi.
 
+The `mpl` chart extension uses `github:ivarvong/mpl`, which requires Node.js 24+ to build. On Windows, the upstream package's install/build scripts currently have a path-handling issue, so `setup.sh` may fail while installing that dependency.
+
 ## Repository Layout
 
 | Path | Purpose |
@@ -26,10 +28,13 @@ Add provider credentials to `~/.pi/agent/auth.json` and restart Pi.
 | `extensions/files.ts` | `/files` browser for git tree and session-referenced files |
 | `extensions/interactive-subagents/` | Multiplexer-backed subagent orchestration (`subagent`, `subagent_resume`, `subagent_interrupt`, `subagents_list`) |
 | `extensions/observational-memory/` | Observational memory observer & consolidator hooks |
+| `extensions/mpl/` | `mpl_render` codemode tool for matplotlib-style PNG/SVG charts (requires the `mpl` Git dependency) |
 | `extensions/prompt-snippets/` | Reusable prompt snippets |
 | `extensions/todos/` | File-backed `todo` tool and `/todos` interactive manager |
 | `extensions/web-fetch/` | Readability + Turndown `web_fetch` tool |
 | `extensions/web-search/` | Google Custom Search `web_search` tool |
+| `extensions/whimsical.ts` | Random playful working-status messages |
+| `extensions/windows-prompt-notify.ts` | Windows desktop alerts for Pi approval/question prompts; includes `/notification-test` |
 | `skills/analyze-sessions/` | Session history & cost analysis skill |
 | `skills/excalidraw-skill/` | Excalidraw design, live-canvas, and scene validation skill |
 | `skills/pdf-reader/` | PDF extraction, rendering, and search skill |
